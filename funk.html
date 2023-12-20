@@ -1,0 +1,68 @@
+<html>
+<head>
+
+<title>
+    funky plant
+</title>
+</head>    
+<style>
+body {
+    background-color: rgb(0, 0, 0);
+    background-image:url('images/green.gif');
+    background-size:cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    text-align:center;
+}
+#cactus{
+text-align:center;
+
+
+}
+
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+     button{
+        border: none;
+        cursor: hand;
+        appearance: none;
+        background-color: inherit;
+      }
+  
+</style>
+<audio controls autoplay loop>
+    <source src="audio/Earthbound- Battle Against a Weak Opponent.mp3">
+      </audio>
+     
+<h1>Meniamoci!</h1>
+<h2>Bimbo il Cactus</h2>
+<div id="cactus">
+    <button onclick="menando()">
+        <img src="images/vasobimbo.gif" id="bimbocactus" width="500" alt="buttonpng"/>
+      </button>
+<br><br><br>
+</div>
+
+<script>
+function menando(){
+    
+	document.getElementById("bimbocactus").src = "images/bimbomenato.gif";
+    reset;
+
+}
+
+
+
+</script>
+<a href="index.html"> <img src="images/home.png" width="200"> </a>
+
+</body>
+</html>

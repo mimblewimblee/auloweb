@@ -1,0 +1,93 @@
+<html>
+       <head>
+          <title>
+              Calcolatrice
+          </title>
+    <script src="js/calcolatrice.js"></script>
+    <meta charset="UTF-8">
+       </head>
+       
+       <style>
+
+body {
+
+background-color: rgb(255, 179, 0);
+background-image:url('images/pongos.png');
+background-size:cover;
+
+}
+a:hover{
+cursor: url("images/cursoreannaffia.png"), default;
+}
+#pp{
+color: aliceblue;
+}
+#ligma{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:12px;
+}
+h1{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: oblique;
+}
+h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-style: oblique;
+}
+
+#annaffiatoio button{
+
+  border: none;
+        cursor: hand;
+        appearance: none;
+        background-color: inherit;
+}
+    
+      </style>
+      <audio controls autoplay loop>
+      <source src="audio/EarthBound - Because I Love You [HQ].mp3">
+        </audio>
+                <body onload="inizializza_gioco()">
+                    <center>  
+                      
+                    <h1> Calcolatrice - Esegui calcolozzi pazzoli</h1>
+                    <h2> Calcolatrice Online</h2>
+                    <div id="ligma">
+                    <br> <br>
+                    Inserisci il primo valore:<input type="number"id="primo_valore"></input><br>
+                    Inserisci il secondo valore:<input type="number"id="secondo_valore"></input><br>
+                    <br>
+                    <button type= "button" onclick="esegui_somma()">+</button>
+                    <button type="button" onclick="esegui_sottrazione()">-</button>
+                    <button type="button" onclick="esegui_moltiplicazione()">*</button>
+                    <button type="button" onclick="esegui_divisione()">:</button>
+                    <br>
+                    <table border="0">
+                        <tr>
+                            <td> Risultato operazione:<input type="number"id="risultato_valore"></input></td>
+                            <td><img src="images/Apple_Macintosh_SE_FDHD.png" id="imgoperazione" width="100"> </a></td>
+                        </tr>
+                    </table>
+                    <br><br><br><br>
+                    <a href="index.html"> <img src="images/home.png" width="200"> </a>
+                    <div id="pp">Home</div>
+                  </div>
+                  <br><br><br><br><br>
+                  <div align="center">
+                    <button type= "button" onclick="annaffia_pianta()">Annaffia</button>
+                  <a href="funk.html"><img src="images/vasovuotl.png" id="vasovuoto" width="300"> </a>
+                  <img src="images/annaffiatoio.png" width="100"><br>
+                  <button type= "button" onclick="annaffia_pianta2()">Annaffia</button>
+                  <img src="images/vasovuotl.png" id="vasovuoto2" width="300"> </a> 
+                  <button type= "button" onclick="annaffia_pianta3()">Annaffia</button>
+                  <img src="images/vasovuotl.png" id="vasovuoto3" width="300"> </a>
+                  <button type= "button" onclick="annaffia_pianta4()">Annaffia</button>
+                  <a href="oasi.html"><img src="images/vasovuotl.png" id="vasovuoto4" width="300"> </a> <br>
+                  <button type= "button" onclick="annaffia_pianta5()">Annaffia</button>
+                  <a href="secretlair.html"><img src="images/vasovuotl.png" id="vasovuoto5" width="300"> </a>
+                  <button type= "button" onclick="annaffia_pianta6()">Annaffia</button>
+                  <img src="images/vasovuotl.png" id="vasovuoto6" width="300"> </a>
+                  </div>
+                     </center> 
+                </body>
+</html>

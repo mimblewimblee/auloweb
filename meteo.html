@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Temperature</title>
+        <audio autoplay controls  loop="loop">
+            <source type="audio/mpeg" src="audio/Sunflowers and Illusions - MOTHER 3 OST.mp3">
+              </audio><br>
+	</head>
+    <style>
+        body{
+          background-image:url('images/sky1.png');
+          background-size: cover;
+          font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .txtred {
+    color: red;
+}
+
+.txtblue {
+    color: blue;
+}
+    </style>
+	<body onload="InitTemperature()">
+<center>
+		<h2>Le temperature in Italia</h2>
+		<img src="Images/canarello.gif" alt="Immagine termometro" width="200">
+		<p id="visualizza_temperature"></p>
+		<p id="singola_temperatura_rossa"> </p>
+		<p id="singola_temperatura_blu"> </p>
+		<input type="button" onclick="ViewTemperature()" value="View"></input>
+
+<script>
+var temperature=[];
+
+function InitTemperature() {
+    var i ;
+    for ( i = 0 ; i <= 10; i++ ) {
+	    temperature[i] = Math.floor(Math.random()*20);
+    }
+}
+
+function ViewTemperature() {
+    document.getElementById("visualizza_temperature").innerHTML ="Tutte le temperature "+ temperature;
+    for ( i = 0 ; i <= 10 ; i++){
+        if ( temperature[i] <= 10 ) {
+            document.getElementById("singola_temperatura_blu").innerHTML ="<span class=\"txtblue\"> Ultima temperatura <= 10°C :  "+ temperature[i]+ "</span>";
+        }
+    }
+    for ( i = 0 ; i <= 10 ; i++){
+        if ( temperature[i] > 10 ) {
+            document.getElementById("singola_temperatura_rossa").innerHTML ="<span class=\"txtred\"> Ultima temperatura > 10°C :  "+ temperature[i]+ "</span>";
+        }
+    }
+    
+}
+</script>
+<br><br><br><br><br><br><br><br><br>
+<a href="index.html"> <img src="images/home.png" width="200"></a>
+</center>
+	</body>
+</html>
